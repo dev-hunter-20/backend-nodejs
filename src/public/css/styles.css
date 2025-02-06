@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .image-thumbnail {
   width: 200px;
+}
+
+.form-add_new {
+  margin: 50px 100px;
+}
+
+.list-user {
+  margin: 50px 100px;
+}
+
+.list-user .action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+
+.list-user .btn-small {
+  width: 80px;
+  height: 36px;
 }

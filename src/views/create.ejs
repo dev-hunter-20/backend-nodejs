@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create User</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li><a href="/create">Create User</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="form-add_new">
+      <form action="/create-user" method="POST">
+        <fieldset>
+          <legend>Add new users</legend>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" />
+
+          <button class="btn waves-effect waves-light" type="submit">
+            Save
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
